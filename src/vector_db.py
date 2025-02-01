@@ -27,3 +27,19 @@ class VectorDB:
         self.index = faiss.read_index(index_path)
         with open(metadata_path, 'rb') as f:
             self.metadata = pickle.load(f)
+
+class EnhancedVectorDB(VectorDB):
+    def hybrid_search(self, query, top_k=5, alpha=0.7):
+        # Get vector similarity results
+        vector_results = self.vector_search(query, top_k=top_k)
+        
+        # Get keyword matching results
+        keyword_results = self.keyword_search(query, top_k=top_k)
+        
+        # Combine results with weighted scoring
+        combined_results = self.merge_results(
+            vector_results, 
+            keyword_results, 
+            alpha=alpha  # Weight for vector results
+        )
+        return combined_results
