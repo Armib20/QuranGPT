@@ -5,7 +5,7 @@ An AI-powered Quran search application that helps users find relevant verses bas
 ## Installation
 
 
-git clone https://github.com/yourusername/qurangpt
+git clone https://github.com/Armib20/qurangpt
 cd qurangpt
 pip install -r requirements.txt
 
