@@ -62,5 +62,4 @@ Project Link: https://github.com/Armib20/qurangpt
 ## Acknowledgments
 
 - The Quran database used in this project
-- Contributors and supporters of the project
-- Any other resources or inspirations
+- Allah
