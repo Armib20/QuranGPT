@@ -18,7 +18,7 @@ def main():
             
             for result in results:
                 st.markdown(f"""
-                [**Surah {result['surah_name']} ({result['surah']}), Verse {result['ayah']}**](https://quran.com/{result['surah']})  
+                [**Surah {result['surah_name']} ({result['surah']}), Verse {result['ayah']}**](https://quran.com/{result['surah']}?startingVerse={result['ayah']})  
                 {result['text']}
                 """)
         else:
