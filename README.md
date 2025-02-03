@@ -59,7 +59,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Ali Rizwan - waj5yp@virginia.edu
 Project Link: https://github.com/Armib20/qurangpt
 
-## Acknowledgments
 
-- The Quran database used in this project
-- Allah
